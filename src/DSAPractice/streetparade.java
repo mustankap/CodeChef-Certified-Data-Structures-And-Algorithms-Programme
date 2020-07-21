@@ -7,10 +7,10 @@ public class streetparade {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
-		int t = sc.nextInt();
+		int input;
 		
-		while(t-->0)
-		{	int n=sc.nextInt();
+		while((input=sc.nextInt())!=0)
+		{	int n=input;
 			int i=0;
 			int a[]=new int[n];
 			for(i=0;i<n;i++)
