@@ -171,12 +171,12 @@ public static void main(String[] args) {
 			
 			if (n>0) 
 				ans=Math.max(ans,x^stack[n]);
-			
+			  
 			
 			n++;
 			stack[n]=x;
 		}
-		
+		 
 		System.out.println(ans);
 	}
 }

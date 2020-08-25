@@ -1,5 +1,5 @@
 package DSAPractice;
-
+//from given molecular formula fing mol wt
 import java.util.Scanner;
 import java.util.Stack;
 public class MMASS {
@@ -30,7 +30,7 @@ public class MMASS {
 			else if(Character.isDigit(mol.charAt(i)))
 			{
 				int op=st.pop();
-				st.push(op*((int)(mol.charAt(i)-48)));
+				st.push(op*((int)(mol.charAt(i)-48)));//converting character 1 to number 1
 				
 			}
 			else if(mol.charAt(i)=='C') 
