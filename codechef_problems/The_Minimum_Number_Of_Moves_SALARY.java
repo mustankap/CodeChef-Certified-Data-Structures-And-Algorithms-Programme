@@ -5,7 +5,7 @@ import java.lang.*;
 import java.io.*;
 //https://www.codechef.com/problems/SALARY/
 /* Name of the class has to be "Main" only if the class is public. */
-class The_Minimum_Number_Of_Moves
+class The_Minimum_Number_Of_Moves_SALARY
 {
 	public static void main (String[] args) throws java.lang.Exception
 	{
