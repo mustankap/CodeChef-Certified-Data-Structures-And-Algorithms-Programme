@@ -2,7 +2,7 @@ import java.util.*;
 
 //https://www.codechef.com/problems/INTEST
 // Remember that the class name should be "Main" and should be "public".
-public class Enormous_Input_Test {
+public class Enormous_Input_Test_INTEST {
 	public static void main(String[] args) 
 	{
 	    try{
