@@ -5,7 +5,7 @@ import java.lang.*;
 import java.io.*;
 //https://www.codechef.com/problems/LECANDY
 /* Name of the class has to be "Main" only if the class is public. */
-class Little_Elephant_and_Candies
+class Little_Elephant_and_Candies_LECANDY
 {
 	public static void main (String[] args) throws java.lang.Exception
 	{
