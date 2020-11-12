@@ -44,27 +44,73 @@ public class LinkedList {
 	
 	public static LinkedList delete(int no, LinkedList list)
 	{
-		Node curr = list.head;
+		Node curr = list.head,prev=null;
 		if(curr!=null && curr.data==no)
 		{
 			list.head=curr.next;
 			System.out.println("found at head therfore"+ no + "deleted");
+			return list;
 		}
-		else
-		{
+		
+		
 			while(curr!=null && curr.data!=no)
 			{
+				prev=curr;
 				curr=curr.next;
 			}
-			if(curr.data==no)
 			
-		}
-		
+			
+			if(curr!=null)
+			{
+				prev.next=curr.next;
+				System.out.println("found and deleted");
+			}
+			if(curr == null)
+			{
+				System.out.println("Not found");
+			}
+			
 		
 		return list;
-		
 	}
-	
+		
+		public static LinkedList deleteAtPosition(LinkedList list, int index) 
+	    { Node curr=list.head,prev=null;
+	    
+	    	if(curr!=null && index==0)
+	    	{
+	    		list.head=curr.next;
+	    		System.out.println(index+"found and deleted");
+	    		return list;
+	    	}
+	    	
+	    	int count=0;
+	    	while(curr!=null)
+	    	{	if(count==index)
+	    			{
+	    				prev.next=curr.next;
+	    				System.out.println(index+"found and deleted");
+	    				return list;
+	    			}
+	    		else
+	    			{
+	    				prev=curr;
+	    				curr=curr.next;
+	    				count++;
+	    			}
+	    	}
+	    	
+	    	if(curr==null)
+	    	{
+	    		System.out.println("not found");
+	    		
+	    	}
+	    	return list;
+	    	
+	    }
+		
+		
+		
 	public static void main(String args[])
 	{
 		LinkedList list = new LinkedList();
@@ -79,6 +125,8 @@ public class LinkedList {
 		
 		print(list);
 		list=list.delete(22,list);
+		print(list);
+		list=list.deleteAtPosition(list, 3); 
 		print(list);
 	}
 	
