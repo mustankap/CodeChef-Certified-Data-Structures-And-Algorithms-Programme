@@ -1,4 +1,4 @@
-package testJava;
+
 
 import java.util.Scanner;
 
@@ -21,7 +21,7 @@ public class aug2020cookq1 {
 			
 			for(int i=0;;i++)
 			{
-				for(int i=0;sum<k;i++)
+				for(int j=0;sum<k;i++)
 				{	co++;
 					sum+=w[i];
 				}

@@ -1,4 +1,4 @@
-package testJava;
+
 import java.util.*;
 public class boatscompetition
 {
