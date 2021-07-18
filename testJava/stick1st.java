@@ -1,4 +1,4 @@
-package sept2020longchallenge;
+
 
 import java.util.Arrays;
 import java.util.Scanner;
