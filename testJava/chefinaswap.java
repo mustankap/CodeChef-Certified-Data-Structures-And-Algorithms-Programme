@@ -204,7 +204,7 @@ class ChefChefinaSwipes{
             else:
                 ans += c[i][0]
     print(ans)*/
-package testJava;
+
 
 import java.util.Scanner;
 import java.util.*;
