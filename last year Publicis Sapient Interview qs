@@ -1,0 +1,169 @@
+PUBLICIS SAPIEN
+
+
+<-------------------Round 1(Online test)------------------------------------------------------->
+
+The first round was a coding round conducted on HackerRank. There were 2 coding questions.
+
+Question 1: Easy strings question. Similar to this: https://www.geeksforgeeks.org/number-substrings-count-character-k/. 
+Question 2: Graph question. Similar to this: https://www.geeksforgeeks.org/number-groups-formed-graph-friends/.
+
+Coding Round: Coding round hosted on the HackerRank platform. It consisted of 2 questions. Time Limit 75minutes.
+
+Given a source vertex, find the shortest distances to all other vertices.
+A string is said to be a programmer string if some subset of its letters can be rearranged to form the word “programmer”.  
+For example, the strings “programmer”, “zasgrammproerret” is programmer strings. Given a string s, determine the distance between the leftmost programmer string and rightmost programmer string.                                                   
+For example s = “programmerxxxgrammproer”. The answer is 3.
+
+The test was conducted on HackerRank. 2 coding questions had to be solved in 90 minutes. 
+
+Q1: Longest Palindromic Substring 
+O(n^2) time and O(n^2) space complexity approach passed all the test cases. 
+
+Q2: I don’t remember it completely but, this one was similar to 
+https://leetcode.com/problems/maximum-frequency-stack/  with some changes. 
+The correct solution required implementation using lazy propagation. I used HashMaps and my solution was partially accepted. 
+
+
+This round consists of two coding questions and the duration was 75 minutes.
+
+
+
+Both questions were of medium level, based on strings and substrings. I was able to solve both of them.
+Ques1: Distinct palindromic  sub-strings of a string
+https://www.geeksforgeeks.org/find-number-distinct-palindromic-sub-strings-given-string/
+
+Ques2: Subsequences of a string in sorted order. The question was similar to this : https://www.geeksforgeeks.org/generating-distinct-subsequences-of-a-given-string-in-lexicographic-order/
+
+So the first round was coding round on hackerrank platform in which we have to solve two coding problems out of which one was easy and other was moderate to hard.
+I remember easy one was of the array and another one was of 2d array with subsets if I am not wrong.
+
+
+Round 1:Online round was conducted on Hirepro platform. It was divided into 5 sections.
+
+Aptitude(15 ques, 15 min)
+verbal(5 ques, 5 min)
+logical(10 ques, 10 min)
+puzzles and logical mixed(10 ques, 10 min)
+coding(1 ques, 30 min)
+Every section was easy but the time was the important key here to cross the sectional cut-off. 
+
+Coding ques was to give the smallest no divisible by an given integer n and whose sum is equal to given integer m.
+
+After this round, from 900 students, 51 got shortlisted for the further rounds
+
+
+
+
+
+
+<------------------------technical Round --------------------------------------------------------------->
+The interview was hosted on Microsoft Teams and lasted over 1 and a half hours. The interviewer was friendly and interactive. He first asked me about myself. As I described some of my projects, he seemed very interested in the business point of view and expected me to understand how my projects would cater to clients. Since I had done projects in ML, he wanted asked me to explain in depth about them, and made sure that I knew what I was talking about. I also needed to explain the usefulness of my projects. 
+
+He then asked me some questions about how we should make sure that products or applications should be user friendly. As a sort of case study he asked me to analyze the Aarogya Setu COVID app. I was asked how I would try ensure that the maximum number of people would be using the app. My general answer was based on the fact that the app needs to usable. He proceeded to discuss with me how exactly an app would classify as ‘usable’ and what improvements could be made in order to achieve such a status. 
+
+Then we began to code. I was asked to code using the CodeInterview platform. This portion was entirely based on OOP concepts. I was asked to code the basic structure of a Shopping Cart (similar to that of any e-commerce website) and explain how to structure the Products and the Shopping Cart itself. He tested me in terms of what was needed, and kept pushing me to delve deeper and and add more attributes and functionalities. I realized he was testing not only my coding skills but also how I translated real world concepts into OOP concepts. After some time, he seemed satisfied.
+
+He then asked questions on theoretical OOP topics. These included, what are Classes and Objects(in your own words along with real-world examples), what is Multi-Threading and when is it used, and what is Runtime Polymorphism and how could I incorporate it into the Shopping Cart problem. After this he asked what is the concept and clean code and why do we need it. 
+
+Towards the end, I was once again asked some questions about my projects and my interests. Since my projects were based on ML, he asked me to explain it to him in the simplest way possible, using analogies to real-life, for example how would you explain the difference between a GPU and a CPU. Finally he asked if I had any queries for him and the interview concluded.
+
+I was informed within an hour that I was one of the 4 shortlisted for the HR round.
+
+
+This round is conducted on Microsoft Teams for discussion and codeinterview.io for coding.
+
+Tell me about Yourself.
+Explain anyone project on your resume.
+Fork() System Call.
+OOPS Concepts.
+Given a String. Find the Longest repeated Substring in it.
+Given an Array with integers. Find Subarrays whose sum is 0. 
+
+The interviewer asked me to introduce myself. She asked me about my projects, followed by a discussion. She asked me to draw a use case diagram for one of my projects. 
+
+Some other questions that were asked: 
+ 
+
+Which programming language I use for coding.
+Explain different OOPs concepts with real-world examples.
+What is Multithreading? She asked me to write a code using threading.
+Explain different data structures and give their real-world examples.
+Linear and Non-linear data structures (Differences, examples, etc)
+What do you understand by Agile?
+Paging
+Some SQL queries (having, group by clause)
+Questions about the internship.
+She wanted to discuss web development in detail but I only had basic knowledge on the topic, so she asked me basic questions related to HTML, tags, etc, and also asked me to write the HTML structure. 
+
+The interview went on for 50 mins. 10 students were shortlisted for the final round. 
+
+This was an online face to face technical round conducted on Hirepro platform. There is an editor in this platform itself, so we have to submit and run our code and also we have to explain the code and approach to the interviewer.
+
+The interview starts with the introduction, then he asks questions on my project. I have developed my project in Python language (Django Framework),
+
+Questions were:
+
+1.Explain Architecture of django
+
+2. How to connect django project to the database.
+
+3. What are different Inheritance styles in django
+
+4. Use of Middlewares in django.
+
+Then he gave me a question which I have to code and compile. The question was: We have data of employees of a company and we have to remove the duplicate entries of emails. This I have done through hashing and compiled successfully.
+
+Then in the same question he asked me that if we have a different programmer and he wants to know the details of top 10 Employees according to their performance marks, how that can be achieved?.         I have told him that we can use inherited classes where base class stores the data of employees and can have two child classes, One can be used to remove the duplicate entries and another can be used to find the top 10 employees. I have to code this approach also.
+
+Then he asked me questions on OOPS:
+
+
+
+1. What are access modifiers.
+
+2. Pillars of OOPS
+
+3. Abstraction
+
+4. Static Binding and Dynamic Binding.
+
+The interview was around 50-60 minutes long.
+
+The interviewer asked me to introduce myself. She asked me about my projects, followed by a discussion. She asked me to draw a use case diagram for one of my projects. 
+
+Some other questions that were asked: 
+ 
+
+Which programming language I use for coding.
+Explain different OOPs concepts with real-world examples.
+What is Multithreading? She asked me to write a code using threading.
+Explain different data structures and give their real-world examples.
+Linear and Non-linear data structures (Differences, examples, etc)
+What do you understand by Agile?
+Paging
+Some SQL queries (having, group by clause)
+Questions about the internship.
+She wanted to discuss web development in detail but I only had basic knowledge on the topic, so she asked me basic questions related to HTML, tags, etc, and also asked me to write the HTML structure. 
+
+The interview went on for 50 mins. 10 students were shortlisted for the final round. 
+
+From coding round out of 70-80 students 20 were shortlisted for the technical interview. My interview lasted for one and a half hours in which it was started with my internships. As most of my work was related to web development he asked me some of the problems about scalability, database optimization, scripting and asked me about which frameworks I had worked on. After that, there were questions on OOPs in which he made me write the code explaining each paradigm. The Interviewer was really nice, was helping me when I got stuck. Then he made me write the pseudo-code of the sorting algorithms that I know. Then he asked me basics about computer networks and protocols and how the internet works. Overall the interview was very smooth.
+
+It was tricky round.  questions were asked from Domain subjects such as OS, DBMS(SQL queries), concepts of software engineering, java, data structure(BST, doubly linked list) along with some few puzzles(how to measure x liters from a and b liters, kind of). few programs such as swapping two no without using third variable, Fibonacci series.
+
+
+
+java was asked in depth, i was asked real world examples of oops concepts such as abstraction, inheritance etc. Questions on collections, exceptions, project discussion.
+
+overall if your basics are strong you can easily clear this round
+
+After this round 15 students were shortlisted for further HR round.
+
+
+
+
+
+
+
+https://www.geeksforgeeks.org/tag/publicis-sapient/
