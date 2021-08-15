@@ -1,2 +1,2 @@
-#CCDSAP
->This is the java questions I practiced from codechef initiatives prepare section
+# CCDSAP
+>This is the set of Data Structures and Algorithms questions I practiced in java from various online judges and for myself
