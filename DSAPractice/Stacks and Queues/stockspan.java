@@ -1,4 +1,4 @@
-package DSAPractice;
+
 import java.util.Stack;
 import java.util.Arrays;
 import java.util.Scanner;

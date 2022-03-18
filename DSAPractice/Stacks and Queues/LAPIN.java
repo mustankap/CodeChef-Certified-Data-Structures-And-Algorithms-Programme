@@ -18,7 +18,6 @@
 
  */
 
-package DSAPractice;
 import java.util.*;
 class LAPIN
 {

@@ -1,4 +1,4 @@
-package DSAPractice;
+
 
 //Java program for Knight Tour problem 
 class horsechess { 

@@ -1,4 +1,4 @@
-package DSAPractice;
+
 //from given molecular formula fing mol wt
 import java.util.Scanner;
 import java.util.Stack;

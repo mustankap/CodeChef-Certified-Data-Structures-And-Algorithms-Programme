@@ -1,4 +1,3 @@
-package DSAPractice;
 
 import java.util.Scanner;
 

@@ -1,4 +1,3 @@
-package DSAPractice;
 
 //Java Code for Linked List Implementation 
 
