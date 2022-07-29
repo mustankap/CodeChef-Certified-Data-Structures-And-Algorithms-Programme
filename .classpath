@@ -8,5 +8,6 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="CSES/Introductory Problems"/>
 	<classpathentry kind="src" path="heisenburg2.0"/>
+	<classpathentry kind="src" path="DSAPractice/recursion"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

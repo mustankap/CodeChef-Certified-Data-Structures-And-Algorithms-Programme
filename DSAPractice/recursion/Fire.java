@@ -1,6 +1,5 @@
 import java.io.*;
 import java.util.*;
-import java.math.BigInteger;
 
 class Fire {
     static BufferedReader br;
