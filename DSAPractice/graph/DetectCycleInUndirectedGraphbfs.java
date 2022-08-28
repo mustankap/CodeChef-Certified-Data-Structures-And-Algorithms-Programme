@@ -11,7 +11,7 @@ class Node {
 }
 
 // using bfs
-public class DetectCycleInUndirectedGraph {
+public class DetectCycleInUndirectedGraphbfs {
     static StringTokenizer st;
     static BufferedReader br;
 
