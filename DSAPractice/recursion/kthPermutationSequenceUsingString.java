@@ -2,10 +2,10 @@ import java.io.*;
 import java.util.*;
 
 //https://leetcode.com/problems/permutation-sequence/
-public class PermutationSequence {
+public class kthPermutationSequenceUsingString {
     static BufferedReader br;
     static StringTokenizer st;
-    PermutationSequence ps = new PermutationSequence();
+    kthPermutationSequenceUsingString ps = new kthPermutationSequenceUsingString();
 
     static int nextInt() throws IOException {
         return Integer.parseInt(next());
