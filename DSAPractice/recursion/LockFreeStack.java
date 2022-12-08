@@ -1,6 +1,8 @@
 
 /**
  * 
+ * https://www.codechef.com/viewsolution/55504593
+ * 
 2 testcase
 2 no of threads
 2(no of elements in the list) 1 2 (the list)
@@ -153,86 +155,89 @@ class LockFreeStack {
         br = new BufferedReader(new InputStreamReader(System.in));
         int t = nextInt();
         while (t-- > 0) {
-           input();
+            input();
         }
 
         br.close();
     }
 
-    public static void input()throws IOException
-    {
-         // no of threads
-         int n = nextInt(), c = 0;
-         // the huge stack
-         Stack<Integer> s[] = new Stack[n];
-         for (int i = 0; i < n; i++) {
-             // stack inside huge stack
-             s[i] = new Stack<>();
-             // length of the values
-             int len = nextInt();
-             // array for adding in small stack
-             int a[] = new int[len];
-             for (int j = 0; j < len; j++) {
-                 a[j] = nextInt();
-             }
-             c += len;
-             for (int k = len - 1; k >= 0; k--) {
-                 s[i].push(a[k]);
-             }
-         }
+    public static void input() throws IOException {
+        // no of threads
+        int n = nextInt(), c = 0;
+        // the huge stack
+        Stack<Integer> s[] = new Stack[n];
+        for (int i = 0; i < n; i++) {
+            // stack inside huge stack
+            s[i] = new Stack<>();
+            // length of the values
+            int len = nextInt();
+            // array for adding in small stack
+            int a[] = new int[len];
+            for (int j = 0; j < len; j++) {
+                a[j] = nextInt();
+            }
+            c += len;
+            for (int k = len - 1; k >= 0; k--) {
+                s[i].push(a[k]);
+            }
+        }
 
-         int arr[] = new int[c];
-         for (int i = 0; i < c; i++) {
-             arr[i] = nextInt();
-         }
-         int z =c-1;boolean flag=false;
-         if (n == 1) {
-             Stack<Integer> st = s[0];
-             while(!st.isEmpty() || z>=0)
-             {
-                if(st.peek()==arr[z])
-                    {st.pop(); flag=true;}
-                else 
-                {
-                    flag=false;
+        int arr[] = new int[c];
+        for (int i = 0; i < c; i++) {
+            arr[i] = nextInt();
+        }
+        int z = c - 1;
+        boolean flag = false;
+        if (n == 1) {
+            Stack<Integer> st = s[0];
+            while (!st.isEmpty() || z >= 0) {
+                if (st.peek() == arr[z]) {
+                    st.pop();
+                    flag = true;
+                } else {
+                    flag = false;
                     break;
                 }
                 z--;
-             }
-             if(flag==true){
-             System.out.println("Yes");return;}
-             else{
-             System.out.println("No");return;
-             }
+            }
+            if (flag == true) {
+                System.out.println("Yes");
+                return;
+            } else {
+                System.out.println("No");
+                return;
+            }
 
-            //  Stack<Integer> a = s[0];
-            //  boolean b = true;
-            //  for (int i = c - 1; i >= 0; i--) {
-            //      if (arr[i] == a.peek()) {
-            //          a.pop();
-            //      } else {
-            //          b = false;
-            //          break;
-            //      }
-            //  }
+            // Stack<Integer> a = s[0];
+            // boolean b = true;
+            // for (int i = c - 1; i >= 0; i--) {
+            // if (arr[i] == a.peek()) {
+            // a.pop();
+            // } else {
+            // b = false;
+            // break;
+            // }
+            // }
 
-            //  if (b) {
-            //      System.out.println("Yes");
-            //  } else {
-            //      System.out.println("No");
-            //  }
-            //  return;
-         }
+            // if (b) {
+            // System.out.println("Yes");
+            // } else {
+            // System.out.println("No");
+            // }
+            // return;
+        }
 
-         if (loc_recur(s, arr, c)) {
-             System.out.println("Yes");
-         } else {
-             System.out.println("No");
-         }
+        if (loc_recur(s, arr, c)) {
+            System.out.println("Yes");
+        } else {
+            System.out.println("No");
+        }
     }
+
     public static boolean loc_recur(Stack<Integer> s[], int[] arr, int n) {
-        if (n == 0)
-        {return true;}
+        if (n == 0) {
+            return true;
+        }
 
         int x = arr[n - 1];
         for (Stack<Integer> st : s) {
