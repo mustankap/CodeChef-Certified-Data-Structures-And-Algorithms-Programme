@@ -1,7 +1,7 @@
 
 import java.util.*;
-public class ChefSwapDigits
-{
+
+public class ChefSwapDigits {
 	public static void main(String[] args) {
 	    try {
 	        Scanner sc = new Scanner(System.in);
@@ -29,7 +29,10 @@ public class ChefSwapDigits
                 z= convtarrtoint(ar);
                  z1= convtarrtoint(br);
                 v=c1+c2;
-                ans[c]=v;
+                ans[c]=v; 
+
+
+				
                  c++;
              }
          }
@@ -40,22 +43,20 @@ public class ChefSwapDigits
 	        }
 	    } catch(Exception e) {return;
 	    }
-	     public static int convtarrtoint(int ap[])
-	     {
-	        int len=ap.length;int no=0,ib;
-	        for(ib=0;ib<len;ib++)
-	        no= Math.pow(10,len-ib)*ap[ib]+no;
-	        return no;
-	     }
-	     public static void swap(int ui,int ux)
-	     {
-	         int temp=0;
-	         temp=ui;
-	         ui=ux;
-	         ux=temp;
-	     }
-	    
-	    
 
+	public static int convtarrtoint(int ap[]) {
+		int len = ap.length;
+		int no = 0, ib;
+		for (ib = 0; ib < len; ib++)
+			no = Math.pow(10, len - ib) * ap[ib] + no;
+		return no;
 	}
 
+	public static void swap(int ui, int ux) {
+		int temp = 0;
+		temp = ui;
+		ui = ux;
+		ux = temp;
+	}
+
+}

@@ -32,18 +32,16 @@ class Fire {
     public static void input() throws IOException {
         int n = nextInt();
         long mod = nextLong();
-        
-        long[] a = new long[n+1];
-        a[0]=2;
-        a[1]=2;
 
-        for(int i=2;i<=n;i++)
-        {
-            a[i]=(a[i-1]%mod+a[i-2]%mod)%mod;
+        long[] a = new long[n + 1];
+        a[0] = 2;
+        a[1] = 2;
+
+        for (int i = 2; i <= n; i++) {
+            a[i] = (a[i - 1] % mod + a[i - 2] % mod) % mod;
         }
 
-       System.out.println(a[n-1]);
-
+        System.out.println(a[n - 1]);
 
     }
 }
