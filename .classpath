@@ -9,5 +9,6 @@
 	<classpathentry kind="src" path="CSES/Introductory Problems"/>
 	<classpathentry kind="src" path="heisenburg2.0"/>
 	<classpathentry kind="src" path="DSAPractice/recursion"/>
+	<classpathentry kind="src" path="DSAPractice/Array Manupulation"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
