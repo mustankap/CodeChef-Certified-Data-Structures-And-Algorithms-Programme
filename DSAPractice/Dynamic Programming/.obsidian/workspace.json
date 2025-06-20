@@ -1,0 +1,158 @@
+{
+  "main": {
+    "id": "37f907b5f4112fcb",
+    "type": "split",
+    "children": [
+      {
+        "id": "91586c5c45b853a9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c1dfd5e3d3dd7f9e",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "46dd3b62509fbd61",
+    "type": "split",
+    "children": [
+      {
+        "id": "cc0b04fd91e34b80",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c52fd495724bd2dd",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "d7c78677d712bc35",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "4bbd6e951b8152c8",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "d225c3ce8cf2fb88",
+    "type": "split",
+    "children": [
+      {
+        "id": "4d5c8827f0965e98",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6156d4d95a58eb8a",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "bb6f8766b678e7e7",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "2647a5bcd85a077d",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "b2730a8513cc5287",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "2024-05-31.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
+    }
+  },
+  "active": "c52fd495724bd2dd",
+  "lastOpenFiles": [
+    "find last occurence of element.md",
+    "DP explaination.md",
+    "2024-05-31.md",
+    "Excalidraw/Drawing 2024-05-12 13.11.47.excalidraw.md",
+    "Excalidraw/Drawing 2024-05-02 13.20.00.excalidraw.md",
+    "2024-05-02.md",
+    "Excalidraw/Drawing 2024-05-02 14.48.14.excalidraw.md",
+    "Untitled 1.canvas",
+    "Untitled.canvas",
+    "Drawing 2024-05-02 13.20.00.excalidraw.md",
+    "Excalidraw"
+  ]
+}
