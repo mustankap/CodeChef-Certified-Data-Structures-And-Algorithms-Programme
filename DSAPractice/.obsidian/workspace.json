@@ -48,9 +48,21 @@
               "icon": "lucide-file",
               "title": "Array Problems"
             }
+          },
+          {
+            "id": "0d540fa7743368fc",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.9.10"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.9.10"
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -185,6 +197,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -194,26 +207,27 @@
       "tldraw:Create new tldrawing": false
     }
   },
-  "active": "d61c9671fa4b9bb9",
+  "active": "0d540fa7743368fc",
   "lastOpenFiles": [
-    "Binary Search/Screenshot from 2025-04-28 10-03-41.png",
-    "Binary Search/Binary Search.md",
-    "Behaviour Interview/Behavioural Interview.md",
-    "Trees/Tree Traversal.md",
-    "Screenshot from 2023-08-29 17-07-12.png",
-    "Screenshot from 2025-04-11 22-13-54.png",
-    "Screenshot from 2025-04-28 19-38-07.png",
-    "Screenshot from 2025-04-28 19-34-56.png",
-    "Screenshot from 2025-04-28 19-33-32.png",
-    "Screenshot from 2025-04-28 10-04-39.png",
+    "Screenshot from 2025-04-13 13-34-18.png",
     "Screenshot from 2025-04-13 16-32-37.png",
-    "Screenshot from 2025-04-13 18-29-47.png",
-    "Screenshot from 2025-04-13 13-34-31.png",
-    "Screenshot from 2025-04-11 22-13-54 1.png",
-    "Array Manupulation/Array Problems.md",
-    "2024-06-10.md",
-    "ADBMS Lectures.md",
+    "Screenshot from 2025-04-28 19-34-56.png",
     "Big Data Midterm.md",
+    "ADBMS Lectures.md",
+    "Array Manupulation/Array Problems.md",
+    "Binary Search/Binary Search.md",
+    "LinkedList.md",
+    "Binary Search/Screenshot from 2025-04-28 10-05-10.png",
+    "Binary Search/Screenshot from 2025-04-28 10-04-39.png",
+    "Binary Search/Screenshot from 2025-04-28 10-03-41.png",
+    "Trees/Tree Traversal.md",
+    "Screenshot from 2025-04-11 22-13-54.png",
+    "Screenshot from 2025-04-12 16-32-24.png",
+    "Behaviour Interview/Behavioural Interview.md",
+    "Screenshot from 2023-08-29 17-07-12.png",
+    "Screenshot from 2025-04-28 19-38-07.png",
+    "Screenshot from 2025-04-28 19-33-32.png",
+    "2024-06-10.md",
     "Untitled.md",
     "collection Framework.md",
     "Trees/Inorder.class",

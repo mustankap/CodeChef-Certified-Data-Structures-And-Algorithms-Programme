@@ -694,3 +694,309 @@ Round 4: Your Work Style - takes around 10 - 15mins (no time limit)
 | [432. All O`one Data Structure44.7%Hard](https://leetcode.com/problems/all-oone-data-structure/?envType=company&envId=amazon&favoriteSlug=amazon-thirty-days)                                                                                                       |      |
 | [438. Find All Anagrams in a String52.0%Med.](https://leetcode.com/problems/find-all-anagrams-in-a-string/?envType=company&envId=amazon&favoriteSlug=amazon-thirty-days)                                                                                            |      |
 | [486. Predict the Winner55.6%Med.](https://leetcode.com/problems/predict-the-winner/?envType=company&envId=amazon&favoriteSlug=amazon-thirty-days)                                                                                                                  |      |
+
+
+
+# Sitetracker:
+
+# SiteTracker Software Engineer Intern Interview Preparation
+
+## Company Overview
+
+SiteTracker is a deployment operations management platform built on Salesforce that helps companies manage critical infrastructure (telecom, utilities, real estate). They work with major clients like British Telecom, KPN, and ChargePoint managing billions in portfolio holdings.
+
+## Expected Interview Questions & STAR Method Answers
+
+### 1. **Technical Architecture & Scalability**
+
+**Question:** "Tell me about a time when you designed a system to handle high concurrent users. How did you approach scalability?"
+
+**STAR Answer:**
+
+- **Situation:** During my internship at Neosoft, I was tasked with building a user profile management system that needed to support thousands of concurrent users.
+- **Task:** The system needed to handle 10,000+ concurrent requests while maintaining fast response times and ensuring data consistency.
+- **Action:** I designed a distributed architecture using Node.js with Express.js for the API layer, implemented MongoDB with proper indexing strategies, and used Redis for session management and caching. I also implemented connection pooling and database read replicas to distribute load. For the frontend, I used React with Redux for state management to minimize server requests.
+- **Result:** Successfully delivered a system supporting 10,000+ concurrent requests with 99.9% uptime, reducing admin processing time by 30% and improving overall system performance.
+
+### 2. **API Design & Performance Optimization**
+
+**Question:** "Describe a situation where you had to optimize API performance. What was your approach?"
+
+**STAR Answer:**
+
+- **Situation:** At Infosys, I was working on the T-Mobile application where users were experiencing slow response times during peak usage.
+- **Task:** I needed to optimize API performance to handle 200+ requests per second while maintaining sub-second latency.
+- **Action:** I implemented several optimizations: redesigned RESTful APIs using Spring Boot with proper caching strategies, optimized database queries using indexing and query optimization, implemented connection pooling to prevent bottlenecks, and set up load balancing. I also implemented pagination for large datasets and used async processing for non-critical operations.
+- **Result:** Reduced overall API latency by 40%, successfully handled 200+ requests per second, and eliminated system bottlenecks, resulting in a 25% improvement in application performance.
+
+### 3. **Problem-Solving & Debugging**
+
+**Question:** "Tell me about a challenging bug you encountered and how you solved it."
+
+**STAR Answer:**
+
+- **Situation:** During the development of my Chaos Chess project, users reported that the game state was becoming inconsistent during online multiplayer sessions, with pieces appearing in different positions for different players.
+- **Task:** I needed to identify the root cause of the synchronization issue and implement a solution that would ensure consistent game state across all connected clients.
+- **Action:** I debugged the issue by implementing comprehensive logging across the WebSocket connections using ASGI Channels. I discovered that the issue was caused by race conditions when multiple moves were made simultaneously. I implemented a turn-based locking mechanism, added state validation on both client and server sides, and created a reconciliation system that would sync states if discrepancies were detected.
+- **Result:** Eliminated synchronization issues, resulting in a 95% reduction in user-reported bugs and enabling smooth multiplayer gameplay for the hackathon win at KJSCE Hack 5.0.
+
+### 4. **Database Design & Optimization**
+
+**Question:** "How would you design a database schema for tracking infrastructure projects with multiple stakeholders?"
+
+**STAR Answer:**
+
+- **Situation:** While working on the file storage system project, I needed to design a database schema that could handle version control, user permissions, and file metadata efficiently.
+- **Task:** Create a scalable database design that could track file versions, user access rights, and maintain data integrity across distributed systems.
+- **Action:** I designed a normalized database schema with separate tables for files, versions, users, and permissions. Implemented proper indexing strategies on frequently queried fields, used foreign key constraints to maintain referential integrity, and designed the schema to support up to 20 previous versions per file. I also implemented soft deletes and audit trails for compliance.
+- **Result:** Created a robust system that efficiently managed file versioning with quick retrieval times and supported complex permission structures, enabling the system to handle large-scale distributed file operations.
+
+### 5. **Authentication & Security**
+
+**Question:** "Describe your experience implementing authentication and authorization systems."
+
+**STAR Answer:**
+
+- **Situation:** At Neosoft, I was responsible for implementing the security layer for the user profile management system that would handle sensitive user data.
+- **Task:** Implement robust authentication and authorization that would reduce security incidents while maintaining user experience.
+- **Action:** I implemented JWT-based authentication with refresh token rotation, integrated OAuth 2.0 for Google Sign-In, implemented role-based access control (RBAC), added password reset functionality via email verification, and implemented rate limiting to prevent brute force attacks. I also added comprehensive audit logging and input validation to prevent SQL injection and XSS attacks.
+- **Result:** Reduced security incidents by 25%, improved user satisfaction by 15% through seamless Google Sign-In integration, and created a security framework that could be reused across other company projects.
+
+### 6. **Machine Learning Integration**
+
+**Question:** "How would you integrate ML capabilities into a business application?"
+
+**STAR Answer:**
+
+- **Situation:** At Infosys, I was tasked with improving the accuracy of an AI chatbot that was providing inconsistent responses to customer queries.
+- **Task:** Enhance the chatbot's answer generation accuracy and make it more reliable for customer support operations.
+- **Action:** I implemented Retrieval-Augmented Generation (RAG) architecture by fine-tuning LLAMA and GPT models, integrated Hugging Face model libraries for better natural language processing, created a robust training pipeline with proper data preprocessing, and implemented continuous learning mechanisms to improve responses over time. I also added confidence scoring and fallback mechanisms.
+- **Result:** Improved answer generation accuracy by 60.2%, significantly reducing customer support tickets that required human intervention and improving overall customer satisfaction scores.
+
+### 7. **CI/CD & DevOps**
+
+**Question:** "Tell me about your experience with continuous integration and deployment."
+
+**STAR Answer:**
+
+- **Situation:** While working on the T-Mobile application at Infosys, our team of 20+ developers was facing deployment bottlenecks and integration conflicts.
+- **Task:** Implement a CI/CD pipeline that would enable seamless code integration and daily deployments for a large development team.
+- **Action:** I set up a comprehensive CI/CD pipeline using GitLab with automated testing, code review processes, and deployment automation. Implemented branch protection rules, automated unit and integration testing, deployment staging environments, and automated rollback capabilities. I also integrated code quality checks and security scanning into the pipeline.
+- **Result:** Enabled 20+ developers to seamlessly merge code and deploy updates daily, reduced deployment errors by 70%, and decreased the time from code commit to production deployment from hours to minutes.
+
+## Technical Follow-up Questions to Prepare For:
+
+1. **Salesforce-specific:** "How would you approach building custom applications on the Salesforce platform?"
+2. **Data modeling:** "How would you design objects and relationships in Salesforce for infrastructure management?"
+3. **Integration:** "How would you integrate external systems with Salesforce?"
+4. **Performance:** "What strategies would you use to optimize Salesforce application performance?"
+5. **Testing:** "How do you ensure quality in Salesforce development?"
+
+## Key Points to Emphasize:
+
+- Your full-stack development experience aligns with their needs
+- Experience with scalable systems and performance optimization
+- Strong database and API design skills
+- Understanding of security best practices
+- Experience with CI/CD and collaborative development
+- Problem-solving mindset and ability to work with cross-functional teams
+
+## Questions to Ask the Interviewer:
+
+1. "What are the biggest technical challenges the engineering team is currently facing?"
+2. "How does SiteTracker leverage Salesforce's capabilities for infrastructure management?"
+3. "What opportunities are there for an intern to contribute to meaningful projects?"
+4. "How does the team approach code reviews and knowledge sharing?"
+5. "What's the team's approach to testing and quality assurance?"
+
+
+
+gemini:
+
+
+
+Here's a breakdown of questions a SiteTracker Engineering Manager, with their specific background, might ask you during a software engineer intern interview, based on your resume:
+
+Given the manager's extensive background with Salesforce (Apex, VisualForce, SOQL), and their current role at SiteTracker (which likely leverages Salesforce given its nature as a field service management platform), you can expect questions related to:
+
+**General Software Engineering & Technical Skills:**
+
+- **About your Master's program:** "You're pursuing a Master of Science in Computer Science. What motivated you to pursue a master's degree, and how do you feel it has enhanced your skills as a software engineer?"
+    
+- **Coursework:** "I see you've taken courses in Advanced Databases and Cloud Computing (Microsoft Azure, AWS, GCP). Can you tell me about a project or experience where you applied concepts from these courses?"
+    
+- **Languages:** "Your resume lists a wide range of languages including Java, Python, JavaScript, TypeScript, C#, and Go. Which one do you feel most proficient in, and why?"
+    
+- **Frameworks/Libraries:** "You've worked with various frameworks like Node.js, Express.js, React.JS, Redux, and Angular. Can you describe a scenario where you had to choose a specific framework for a project, and what factors influenced your decision?"
+    
+- **Developer Tools & CI/CD:** "You've listed Docker, Git, GitHub, CI/CD, and Kubernetes. Can you walk me through your understanding of a CI/CD pipeline and its importance in software development? Have you implemented one yourself?" (This is highly relevant given the manager's experience with GitLab CI/CD at Infosys).
+    
+- **Databases:** "You have experience with both SQL and NoSQL databases, including MySQL, Oracle, MongoDB, and Firebase. When would you choose a NoSQL database over a relational database, and vice versa?"
+    
+
+**Questions Tailored to Your Experience (with a Salesforce/Enterprise Lean):**
+
+- **Software Development Intern (Neosoft Pvt. Ltd.):**
+    - "You engineered a distributed, scalable user profile management system that supported 10,000+ concurrent requests. Can you elaborate on the architecture you chose and how you ensured scalability?"
+        
+    - "You mentioned bolstering security by implementing robust user authentication and authorization. What specific security best practices did you implement?"
+        
+    - "You partnered with cross-functional teams to transform wireframes into responsive, functional frontend web interfaces. How do you approach collaborating with designers and ensuring a seamless user experience?"
+        
+- **Software Engineer (Infosys):**
+    - "You led Node.js/Agile scalable product configuration for JCI-Hitachi Air. Can you describe a challenging technical decision you had to make in that role and how you approached it?"
+        
+    - "You minimized latency by 25% for T-Mobile by optimizing the application's thread pool. Can you explain the process you followed to identify and resolve the bottleneck?"
+        
+    - "You leveraged Spring Boot to architect RESTful APIs that processed 200 API requests per second. How did you ensure the APIs were robust and performed well under load?"
+        
+    - "You revamped the T-Mobile app's front-end design using React and Redux. What were some of the key challenges in improving the user experience, and how did you overcome them?"
+        
+    - "You implemented a robust CI/CD pipeline with GitLab for the T-Mobile application. What were the benefits you observed from this implementation, and how did it impact the development team?" (This directly aligns with the manager's experience).
+        
+    - "You improved answer generation accuracy by 60.2% for the Infosys Equinox AI bot by fine-tuning LLMs and implementing RAG. Can you explain your approach to fine-tuning LLMs and how Retrieval-Augmented Generation works?" (This demonstrates your understanding of modern AI/ML which could be relevant to SiteTracker's future innovations).
+        
+- **Software Development Intern (NeuralTechSoft Pvt.Ltd):**
+    - "You devised a mobile web app for financial news sentiment analysis. What were the main challenges in developing a sentiment analysis model, and how did you address them?"
+        
+    - "You spearheaded the 'Empower' project, delivering 40% faster deployments through microservices and reducing system latency by 35%. Can you discuss the benefits and challenges of a microservices architecture based on your experience?"
+        
+
+**Behavioral and Situational Questions:**
+
+- "Tell me about a time you faced a significant technical challenge in a project. How did you approach it, and what was the outcome?"
+- "Describe a situation where you had to work with a team to achieve a common goal. What was your role, and how did you contribute to the team's success?"
+- "How do you stay up-to-date with the latest technologies and industry trends?"
+- "What are your career aspirations, and how do you see this internship at SiteTracker fitting into your long-term goals?"
+- "Do you have any questions for me about SiteTracker, the team, or the internship role?"
+
+**Questions potentially hinting at Salesforce/CRM:**
+
+While your resume doesn't explicitly mention Salesforce, given the manager's background, they might probe your understanding of enterprise software or CRM systems.
+
+- "SiteTracker operates in the field service management space, which often integrates with CRM systems like Salesforce. Do you have any familiarity with CRM concepts or enterprise-level software?" (This is a subtle way for them to gauge if you've thought about their domain).
+
+**Overall Strategy for the Interview:**
+
+- **STAR Method:** Prepare to answer behavioral questions using the STAR (Situation, Task, Action, Result) method.
+- **Showcase Problem-Solving:** Emphasize your problem-solving skills and how you approach technical challenges.
+- **Quantify Achievements:** Whenever possible, use metrics and numbers to highlight the impact of your work (e.g., "reduced admin time by 30%" , "minimized latency by 25%" ).
+    
+- **Ask Insightful Questions:** Prepare thoughtful questions to ask the interviewer at the end. This shows your engagement and interest in the role and company.
+- **Connect to SiteTracker:** If possible, try to subtly connect your experiences to what SiteTracker does. For example, when talking about your user profile management system, you could briefly mention how similar challenges might exist in managing field service data.
+
+
+
+
+=======================================================================================================================================================================================
+
+
+# SiteTracker Software Engineer Intern Interview Preparation
+
+## Company Overview
+
+SiteTracker is a deployment operations management platform built on Salesforce that helps companies manage critical infrastructure (telecom, utilities, real estate). They work with major clients like British Telecom, KPN, and ChargePoint managing billions in portfolio holdings.
+
+## Expected Interview Questions & STAR Method Answers
+
+### 1. **Technical Architecture & Scalability**
+
+**Question:** "Tell me about a time when you designed a system to handle high concurrent users. How did you approach scalability?"
+
+**STAR Answer:**
+
+- **Situation:** During my internship at Neosoft, I was tasked with building a user profile management system that needed to support thousands of concurrent users.
+- **Task:** The system needed to handle 10,000+ concurrent requests while maintaining fast response times and ensuring data consistency.
+- **Action:** I architected the system using Node.js with Express.js and implemented clustering with PM2 to utilize all CPU cores. For MongoDB, I created compound indexes on {userId: 1, createdAt: -1} and {email: 1, status: 1} fields, implemented connection pooling using mongoose with maxPoolSize: 50 and bufferMaxEntries: 0. I set up Redis using ioredis client with clustering enabled across 3 nodes for session storage with 24-hour TTL and implemented Redis pub/sub for real-time notifications. For caching, I used Redis with cache-aside pattern, storing user profiles with 15-minute TTL and implementing cache invalidation on updates. I configured MongoDB read replicas using readPreference: 'secondaryPreferred' to distribute read operations. On the frontend, I used React with Redux Toolkit for state management, implemented RTK Query for API caching and data fetching, and used React.memo and useMemo hooks to prevent unnecessary re-renders.
+- **Result:** Successfully delivered a system supporting 10,000+ concurrent requests with 99.9% uptime, reducing admin processing time by 30% and improving overall system performance.
+
+### 2. **API Design & Performance Optimization**
+
+**Question:** "Describe a situation where you had to optimize API performance. What was your approach?"
+
+**STAR Answer:**
+
+- **Situation:** At Infosys, I was working on the T-Mobile application where users were experiencing slow response times during peak usage, with some API calls taking 3-5 seconds.
+- **Task:** I needed to optimize API performance to handle 200+ requests per second while maintaining sub-second latency.
+- **Action:** I implemented dynamic thread pool sizing using Spring Boot's ThreadPoolTaskExecutor with corePoolSize: 10, maxPoolSize: 50, and queueCapacity: 100, replacing the previous static configuration. I integrated OpenTelemetry for distributed tracing using the OpenTelemetry Java agent, creating custom spans to track database queries, external API calls, and business logic execution. I set up New Relic APM for real-time performance monitoring, configuring alerts for response times > 500ms and error rates > 1%. For caching, I implemented Spring Cache with Redis using @Cacheable annotations on frequently accessed methods, with custom cache keys and 10-minute TTL. I optimized database queries by adding composite indexes on (user_id, created_date, status) and implemented pagination using Spring Data JPA's Pageable with custom JPQL queries. For async processing, I used @Async annotation with CompletableFuture for non-critical operations like audit logging and email notifications, and implemented RabbitMQ with Spring AMQP for decoupled message processing using fanout exchanges.
+- **Result:** Reduced overall API latency from 3-5 seconds to 400ms (40% improvement), successfully handled 200+ requests per second, and eliminated system bottlenecks. New Relic dashboards showed 99.5% of requests completing under 500ms.
+
+### 3. **Problem-Solving & Debugging**
+
+**Question:** "Tell me about a challenging bug you encountered and how you solved it."
+
+**STAR Answer:**
+
+- **Situation:** During the development of my Chaos Chess project, users reported that the game state was becoming inconsistent during online multiplayer sessions, with pieces appearing in different positions for different players.
+- **Task:** I needed to identify the root cause of the synchronization issue and implement a solution that would ensure consistent game state across all connected clients.
+- **Action:** I implemented comprehensive logging using Winston with custom formatters, sending logs to both console and file transports with different log levels. I used Django Channels with Redis channel layers for WebSocket management, implementing custom middleware to track connection states. I discovered race conditions by analyzing logs with ELK stack (Elasticsearch, Logstash, Kibana) and identified that moves were being processed out of order. I implemented a turn-based locking mechanism using Redis distributed locks with SETNX commands and 30-second TTL, created atomic game state updates using Django's select_for_update() with nowait=True to prevent deadlocks. For state validation, I implemented JSON schema validation using jsonschema library on both client and server, and created a reconciliation system using diff algorithms (Myers' algorithm implementation) that would compare and sync states every 10 seconds using Django Celery Beat scheduler.
+- **Result:** Eliminated synchronization issues, resulting in a 95% reduction in user-reported bugs and enabling smooth multiplayer gameplay for the hackathon win at KJSCE Hack 5.0.
+
+### 4. **Database Design & Optimization**
+
+**Question:** "How would you design a database schema for tracking infrastructure projects with multiple stakeholders?"
+
+**STAR Answer:**
+
+- **Situation:** While working on the distributed file storage system project, I needed to design a database schema that could handle version control, user permissions, and file metadata efficiently across multiple nodes.
+- **Task:** Create a scalable database design that could track file versions, user access rights, and maintain data integrity across distributed systems.
+- **Action:** I designed a PostgreSQL schema with five main tables: files (id, name, current_version_id, owner_id, created_at), file_versions (id, file_id, version_number, content_hash, size, created_at), users (id, username, email, created_at), permissions (id, user_id, file_id, permission_type, granted_at), and file_chunks (id, version_id, chunk_index, content_hash, storage_location). I implemented B-tree indexes on frequently queried fields: files(owner_id, created_at), file_versions(file_id, version_number), permissions(user_id, file_id), and a composite index on file_chunks(version_id, chunk_index). Used foreign key constraints with CASCADE delete on file_versions to files, and RESTRICT on permissions to prevent accidental data loss. Implemented soft deletes using a deleted_at timestamp column with partial indexes WHERE deleted_at IS NULL. For audit trails, I used PostgreSQL triggers with NEW and OLD record comparisons, storing changes in an audit_log table with JSONB columns for before/after states. Configured connection pooling using PgBouncer with pool_mode=transaction and max_client_conn=1000.
+- **Result:** Created a robust system that efficiently managed file versioning with sub-100ms retrieval times for version history and supported complex permission structures, enabling the system to handle large-scale distributed file operations with 20 version rollback capability.
+
+### 5. **Authentication & Security**
+
+**Question:** "Describe your experience implementing authentication and authorization systems."
+
+**STAR Answer:**
+
+- **Situation:** At Neosoft, I was responsible for implementing the security layer for the user profile management system that would handle sensitive user data including PII and financial information.
+- **Task:** Implement robust authentication and authorization that would reduce security incidents while maintaining user experience.
+- **Action:** I implemented JWT-based authentication using jsonwebtoken library with RS256 algorithm, storing private keys in AWS Secrets Manager and implementing token refresh with sliding window expiration (access token: 15min, refresh token: 7 days). For OAuth 2.0 Google Sign-In, I used Passport.js with passport-google-oauth20 strategy, implementing PKCE flow for additional security. I created RBAC using middleware functions that checked user roles against route permissions stored in Redis sets, implementing granular permissions like 'user:read', 'user:write', 'admin:delete'. Password reset functionality used crypto.randomBytes(32) for secure tokens, stored in Redis with 1-hour TTL, and sent via Nodemailer with SendGrid SMTP. I implemented rate limiting using express-rate-limit with Redis store, setting 5 login attempts per 15 minutes per IP, and used helmet.js for security headers including CSP, HSTS, and XSS protection. Input validation used Joi schema validation with custom sanitization, and I implemented SQL injection prevention using parameterized queries with mongoose and express-validator for request validation.
+- **Result:** Reduced security incidents by 25% (from 40 to 30 incidents per month), improved user satisfaction by 15% through seamless Google Sign-In integration, and created a security framework that was adopted across 3 other company projects.
+
+### 6. **Machine Learning Integration**
+
+**Question:** "How would you integrate ML capabilities into a business application?"
+
+**STAR Answer:**
+
+- **Situation:** At Infosys, I was tasked with improving the accuracy of the Equinox AI chatbot that was providing inconsistent responses to customer queries, with accuracy rates below 40%.
+- **Task:** Enhance the chatbot's answer generation accuracy and make it more reliable for customer support operations.
+- **Action:** I implemented RAG architecture using LangChain framework with FAISS vector database for document retrieval. Fine-tuned LLAMA-7B model using LoRA (Low-Rank Adaptation) with rank=16, alpha=32, and dropout=0.1, training on 50K customer service conversations using transformers library and PEFT. Integrated Hugging Face Hub using sentence-transformers/all-MiniLM-L6-v2 for embedding generation, storing embeddings in ChromaDB with cosine similarity search. Created preprocessing pipeline using spaCy for text cleaning and tokenization, implemented document chunking with 512-token windows and 50-token overlap using LangChain's RecursiveCharacterTextSplitter. Added confidence scoring using model perplexity calculations and implemented fallback mechanisms with rule-based responses when confidence < 0.7. Used Weights & Biases for experiment tracking and model versioning, implementing A/B testing with 70/30 traffic split to compare model versions. Set up continuous learning pipeline using Apache Airflow, retraining models weekly with new customer interactions stored in PostgreSQL.
+- **Result:** Improved answer generation accuracy from 39.8% to 60.2% (60.2% improvement), reduced customer support tickets requiring human intervention by 45%, and achieved 4.2/5.0 customer satisfaction score in post-interaction surveys.
+
+### 7. **CI/CD & DevOps**
+
+**Question:** "Tell me about your experience with continuous integration and deployment."
+
+**STAR Answer:**
+
+- **Situation:** While working on the T-Mobile application at Infosys, our team of 20+ developers was facing deployment bottlenecks with 2-3 failed deployments per week and integration conflicts.
+- **Task:** Implement a CI/CD pipeline that would enable seamless code integration and daily deployments for a large development team.
+- **Action:** I configured GitLab CI/CD with .gitlab-ci.yml defining 5 stages: build, test, security, staging, and production. Implemented Docker containerization using multi-stage Dockerfiles, reducing image size from 1.2GB to 400MB. Set up automated testing with Jest for unit tests (coverage threshold: 80%), Cypress for E2E tests, and SonarQube for code quality gates with quality profiles enforcing <3% code duplication and Grade A maintainability. Used GitLab Container Registry with vulnerability scanning using Clair, and implemented branch protection rules requiring 2 approvals and passing CI checks. Created staging environment using Kubernetes with Helm charts, implementing blue-green deployments with 5-minute health checks using readiness/liveness probes. Added automated rollback using GitLab's deployment rollback API triggered by error rate thresholds monitored via Prometheus and Grafana. Integrated Slack notifications using webhooks for deployment status and implemented approval workflows for production deployments using GitLab environments with manual deployment gates.
+- **Result:** Reduced failed deployments from 2-3 per week to 1 per month, enabled 20+ developers to deploy 3-5 times daily, decreased deployment time from 45 minutes to 8 minutes, and achieved 99.8% deployment success rate with automated rollback preventing any production downtime.
+
+## Technical Follow-up Questions to Prepare For:
+
+1. **Salesforce-specific:** "How would you approach building custom applications on the Salesforce platform?"
+2. **Data modeling:** "How would you design objects and relationships in Salesforce for infrastructure management?"
+3. **Integration:** "How would you integrate external systems with Salesforce?"
+4. **Performance:** "What strategies would you use to optimize Salesforce application performance?"
+5. **Testing:** "How do you ensure quality in Salesforce development?"
+
+## Key Points to Emphasize:
+
+- Your full-stack development experience aligns with their needs
+- Experience with scalable systems and performance optimization
+- Strong database and API design skills
+- Understanding of security best practices
+- Experience with CI/CD and collaborative development
+- Problem-solving mindset and ability to work with cross-functional teams
+
+## Questions to Ask the Interviewer:
+
+1. "What are the biggest technical challenges the engineering team is currently facing?"
+2. "How does SiteTracker leverage Salesforce's capabilities for infrastructure management?"
+3. "What opportunities are there for an intern to contribute to meaningful projects?"
+4. "How does the team approach code reviews and knowledge sharing?"
+5. "What's the team's approach to testing and quality assurance?"
